@@ -9,12 +9,12 @@ Proibido uso de IA (Tando para consulta, implentação ou qualquer outra finalid
 3- A nota da arguição será individual.
 
 A página web deve conter:
-Imagens
-Listas
-Tabelas
-Seletor Classe
-Seletor ID
-Fontes personalizadas
-Cores
-Padding/Margin
-Flexbox
+- Imagens
+- Listas
+- Tabelas
+- Seletor Classe
+- Seletor ID
+- Fontes personalizadas
+- Cores
+- Padding/Margin
+- Flexbox
