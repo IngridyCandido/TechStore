@@ -80,7 +80,6 @@
     width: 30%;
     background-color: white;
     border-radius: 8px;
-    overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     box-sizing: border-box;
@@ -92,12 +91,12 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.conteudo-card {
+.conteudo-cards {
     padding: 16px;
     box-sizing: border-box;
 }
 
-.conteudo-card button {
+.conteudo-cards button {
     background-color: #1769e0;
     color: white;
     border: none;
