@@ -1,18 +1,153 @@
+/* parte de josé*/
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: #0d1322;
+}
+
+.menu h1 {
+    font-size: 29px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.menu p {
+    margin-left: 25px;
+    color: #e2e8f0;
+    font-size: 15px;
+}
+
+.container section:first-child {
+    background: linear-gradient(135deg, #1d61f2 0%, #17387a 60%);
+    padding: 100px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container section:first-child>h2 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #93c5fd;
+    margin-bottom: 20px;
+}
+
+.container section:first-child>h1 {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+
+.container section:first-child>h2 {
+    font-size: 17px;
+    font-weight: 400;
+    color: #cbd5e1;
+    margin-bottom: 35px;
+    max-width: 600px;
+}
+
+.container section:first-child>button {
+    background-color: #ffffff;
+    color: #2563eb;
+    border: none;
+    padding: 12px 24px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+/* Parte de Ellen: Cards */
+.card {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.card1,
+.card2,
+.card3 {
+    width: 30%;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+.card1:hover,
+.card2:hover,
+.card3:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.conteudo-card {
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.conteudo-card button {
+    background-color: #1769e0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 17px;
+    cursor: pointer;
+}
+
+.card1 img,
+.card2 img,
+.card3 img {
+    width: 100%;
+    height: 145px;
+    object-fit: contain;
+    display: block;
+    border-radius: 8px 8px 0 0;
+}
+
+.container button {
+    background-color: #1769e0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 17px;
+    cursor: pointer;
+}
+
+.container button:hover {
+    background-color: #0d56c7;
+}
+
+.container {
+    background-color: #f5f7fa;
+}
+
 /* Parte de Nicole: SERVIÇOS + CONTATO + FORMULÁRIO + FOOTER */
 
-.container + div {
+.container+div {
     background-color: #ffffff;
     padding: 50px 6%;
     box-sizing: border-box;
 }
 
-.container + div table {
+.container+div table {
     width: 100%;
     border-collapse: collapse;
     font-size: 16px;
 }
 
-.container + div table th {
+.container+div table th {
     background-color: #111827;
     color: #ffffff;
     text-align: left;
@@ -20,35 +155,35 @@
     font-weight: bold;
 }
 
-.container + div table td {
+.container+div table td {
     padding: 14px 15px;
     border-bottom: 1px solid #d9d9d9;
     color: #1f2937;
 }
 
-.container + div table tr:hover td {
+.container+div table tr:hover td {
     background-color: #f3f5f8;
 }
 
-.container + div + div {
+.container+div+div {
     background-color: #f5f7fa;
     padding: 55px 6% 20px;
     box-sizing: border-box;
 }
 
-.container + div + div h2 {
+.container+div+div h2 {
     color: #14213d;
     font-size: 28px;
     margin: 0 0 12px 0;
 }
 
-.container + div + div p {
+.container+div+div p {
     color: #1f2937;
     font-size: 16px;
     margin: 0;
 }
 
-.container + div + div + div {
+.container+div+div+div {
     background-color: #f5f7fa;
     padding: 15px 6% 60px;
     box-sizing: border-box;
@@ -57,7 +192,7 @@
     justify-content: flex-end;
 }
 
-.container + div + div + div form {
+.container+div+div+div form {
     width: 50%;
     max-width: 500px;
 
@@ -72,7 +207,7 @@
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
 }
 
-.container + div + div + div form label {
+.container+div+div+div form label {
     display: inline-block;
 
     color: #1f2937;
@@ -83,7 +218,7 @@
     margin-bottom: 6px;
 }
 
-.container + div + div + div form input[type="text"] {
+.container+div+div+div form input[type="text"] {
     width: 100%;
 
     height: 40px;
@@ -103,20 +238,20 @@
     font-family: inherit;
 }
 
-.container + div + div + div form input[type="text"]:nth-of-type(1) {
+.container+div+div+div form input[type="text"]:nth-of-type(1) {
     height: 40px;
 }
 
-.container + div + div + div form input[type="text"]:nth-of-type(2) {
+.container+div+div+div form input[type="text"]:nth-of-type(2) {
     height: 40px;
 }
 
-.container + div + div + div form input[type="text"]:nth-of-type(3) {
+.container+div+div+div form input[type="text"]:nth-of-type(3) {
     height: 100px;
     padding-top: 12px;
 }
 
-.container + div + div + div form input[type="text"]:focus {
+.container+div+div+div form input[type="text"]:focus {
     outline: none;
 
     border-color: #2563eb;
@@ -125,7 +260,7 @@
 }
 
 
-.container + div + div + div form input[type="submit"] {
+.container+div+div+div form input[type="submit"] {
     background-color: #2563eb;
 
     color: #ffffff;
@@ -146,7 +281,7 @@
     transition: 0.3s;
 }
 
-.container + div + div + div form input[type="submit"]:hover {
+.container+div+div+div form input[type="submit"]:hover {
     background-color: #1d4ed8;
 
     transform: translateY(-1px);
@@ -169,31 +304,31 @@ footer {
 @media (max-width: 768px) {
 
     /* Serviços */
-    .container + div {
+    .container+div {
         padding: 40px 20px;
         overflow-x: auto;
     }
 
-    .container + div table {
+    .container+div table {
         font-size: 14px;
     }
 
-    .container + div table th,
-    .container + div table td {
+    .container+div table th,
+    .container+div table td {
         padding: 10px;
     }
 
-    .container + div + div {
+    .container+div+div {
         padding: 40px 20px 20px;
     }
 
-    .container + div + div + div {
+    .container+div+div+div {
         padding: 15px 20px 40px;
 
         justify-content: center;
     }
 
-    .container + div + div + div form {
+    .container+div+div+div form {
         width: 100%;
         max-width: 500px;
     }
