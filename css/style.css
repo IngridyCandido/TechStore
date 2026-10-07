@@ -1,0 +1,279 @@
+/* parte de josé*/
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: #0d1322;
+}
+
+.menu h1 {
+    font-size: 29px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.menu p {
+    margin-left: 25px;
+    color: #e2e8f0;
+    font-size: 15px;
+}
+
+.container section:first-child {
+    background: linear-gradient(135deg, #1d61f2 0%, #17387a 60%);
+    padding: 100px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container section:first-child>h2 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #93c5fd;
+    margin-bottom: 20px;
+}
+
+.container section:first-child>h1 {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+
+.container section:first-child>h2 {
+    font-size: 17px;
+    font-weight: 400;
+    color: #cbd5e1;
+    margin-bottom: 35px;
+    max-width: 600px;
+}
+
+.container section:first-child>button {
+    background-color: #ffffff;
+    color: #2563eb;
+    border: none;
+    padding: 12px 24px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+/* Parte de Ellen: Cards */
+.card {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.card1,
+.card2,
+.card3 {
+    width: 30%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+.card1:hover,
+.card2:hover,
+.card3:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.conteudo-cards {
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.conteudo-cards button {
+    background-color: #1769e0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 17px;
+    cursor: pointer;
+}
+
+.card1 img,
+.card2 img,
+.card3 img {
+    width: 100%;
+    height: 145px;
+    object-fit: contain;
+    display: block;
+    border-radius: 8px 8px 0 0;
+}
+
+.container button:hover {
+    background-color: #0d56c7;
+}
+
+.container {
+    background-color: #f5f7fa;
+}
+
+/* Parte de Nicole: SERVIÇOS + CONTATO + FORMULÁRIO + FOOTER */
+.servicos {
+    background-color: #ffffff;
+    padding: 50px 6%;
+    box-sizing: border-box;
+}
+
+.servicos table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+.servicos table th {
+    background-color: #111827;
+    color: #ffffff;
+    text-align: left;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.servicos table td {
+    padding: 14px 15px;
+    border-bottom: 1px solid #d9d9d9;
+    color: #1f2937;
+}
+
+.servicos table tr:hover td {
+    background-color: #f3f5f8;
+}
+
+.contato {
+    background-color: #f5f7fa;
+    padding: 55px 6% 20px;
+    box-sizing: border-box;
+}
+
+.contato h2 {
+    color: #14213d;
+    font-size: 28px;
+    margin: 0 0 12px 0;
+}
+
+.contato p {
+    color: #1f2937;
+    font-size: 16px;
+    margin: 0;
+}
+
+.formulario {
+    background-color: #f5f7fa;
+    padding: 15px 6% 60px;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form-contato {
+    width: 50%;
+    max-width: 500px;
+
+    background-color: #ffffff;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-sizing: border-box;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.form-contato label {
+    display: inline-block;
+
+    color: #1f2937;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    margin-bottom: 6px;
+}
+
+.form-contato input[type="text"] {
+    width: 100%;
+
+    height: 40px;
+
+    padding: 10px 12px;
+
+    margin-bottom: 8px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 5px;
+
+    font-size: 14px;
+
+    font-family: inherit;
+}
+
+.form-contato input[type="text"]:nth-of-type(1) {
+    height: 40px;
+}
+
+.form-contato input[type="text"]:nth-of-type(2) {
+    height: 40px;
+}
+
+.form-contato input[type="text"]:nth-of-type(3) {
+    height: 100px;
+    padding-top: 12px;
+}
+
+.form-contato input[type="text"]:focus {
+    outline: none;
+
+    border-color: #2563eb;
+
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+.form-contato input[type="submit"] {
+    background-color: #2563eb;
+
+    color: #ffffff;
+
+    border: none;
+
+    border-radius: 5px;
+
+    padding: 11px 22px;
+
+    margin-top: 3px;
+
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.rodape { 
+    padding: 18px 15px;
+    background-color: #111827;
+
+    color: #ffffff;
+
+    text-align: center;
+
+    font-size: 14px;
+
+    box-sizing: border-box;
+}
